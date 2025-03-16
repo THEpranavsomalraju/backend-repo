@@ -1,0 +1,9 @@
+# Server configuration
+PORT=3000
+NODE_ENV=development
+
+# MongoDB connection string (local development)
+MONGODB_URI=mongodb://localhost:27017/shiplet_db
+
+# API security
+API_KEY=shiplet-secure-api-key-123456
