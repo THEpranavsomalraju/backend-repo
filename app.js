@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
   // In production, specify your domains instead of '*'
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://shiplet.my', 'https://www.shiplet.my', 'https://shiplet.netlify.app'] 
+    ? ['https://shiplet.my', 'https://www.shiplet.my', 'https://shiplet.netlify.app', 'https://fastidious-youtiao-5b1c11.netlify.app'] 
     : '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'API-Key']
