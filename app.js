@@ -13,7 +13,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({origin: ['https://fastidious-youtiao-5b1c11.netlify.app/', 'https://shiplet.my', 'https://www.shiplet.my'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'API-Key']}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
